@@ -9,6 +9,7 @@ import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
 import CrearFormulario from "./components/crearFormulario";
+import Visualizar from "./components/visualizar";
 // import Nose from "./components/nose";
  
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
        <Route path="/nuevoFormulario" element={<CrearFormulario/>} />
+       <Route path="/visualizar/:rut" element={<Visualizar />} />
      </Routes>
    </div>
  );

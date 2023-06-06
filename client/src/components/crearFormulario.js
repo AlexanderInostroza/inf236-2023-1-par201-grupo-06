@@ -86,16 +86,7 @@ export default function CrearFormulario() {
            onChange={(e) => updateForm({ rut: e.target.value })}
          />
        </div>
-       <div className="form-group">
-         <label htmlFor="numero_de_folio">Numero de folio</label>
-         <input
-           type="text"
-           className="form-control"
-           id="numero_de_folio"
-           value={form.numero_de_folio}
-           onChange={(e) => updateForm({ numero_de_folio: e.target.value })}
-         />
-       </div>
+
        <div className="form-group">
          <label htmlFor="horario_de_atencion">Horario de atencion</label>
          <input
@@ -107,7 +98,7 @@ export default function CrearFormulario() {
          />
        </div>
        <div className="form-group">
-         <label htmlFor="fecha">Fecha</label>
+         <label htmlFor="fecha">Fecha de nacimiento</label>
          <input
            type="text"
            className="form-control"
@@ -179,15 +170,6 @@ export default function CrearFormulario() {
          </div>
        </div>
        <div className="form-group">
-         <label htmlFor="edad">Edad</label>
-         <input
-           type="text"
-           className="form-control"
-           id="edad"
-           value={form.edad}
-           onChange={(e) => updateForm({ edad: e.target.value })}
-         />
-       </div><div className="form-group">
          <label htmlFor="prevision">Prevision</label>
          <input
            type="text"
@@ -198,7 +180,7 @@ export default function CrearFormulario() {
          />
        </div>
        <div className="form-group">
-         <label htmlFor="acompanante">Acompanante</label>
+         <label htmlFor="acompanante">Nombre del acompañante</label>
          <input
            type="text"
            className="form-control"
