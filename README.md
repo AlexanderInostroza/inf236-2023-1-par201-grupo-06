@@ -11,7 +11,7 @@ Este es el repositorio del *Grupo 6*, cuyos integrantes son:
 
 > Obtener enlace desde el home de la wiki del repo.
 
-Puede acceder a la Wiki mediante el siguiente [enlace](https://gitlab.inf.utfsm.cl/tabata.ahumada/inf236-2023-1-par201-grupo-06/-/wikis/home)
+Puede acceder a la Wiki mediante el siguiente [enlace](https://github.com/AlexanderInostroza/inf236-2023-1-par201-grupo-06/wiki)
 
 ## Videos
 
