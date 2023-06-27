@@ -15,8 +15,9 @@ Puede acceder a la Wiki mediante el siguiente [enlace](https://github.com/Alexan
 
 ## Videos
 
-* [Video presentación avance 1](https://youtu.be/0nHZnH322dM)
-* [Video presentación avance 2, hito 4](https://youtu.be/VOsks6NvwPw)
+* [Vídeo presentación avance 1](https://youtu.be/0nHZnH322dM)
+* [Vídeo presentación avance 2, hito 4](https://youtu.be/VOsks6NvwPw)
+* [Vídeo hito 6-7](https://youtu.be/NHZF_o2MIM8)
 ## Aspectos técnicos relevantes
 
 # MERN-base-proyect
