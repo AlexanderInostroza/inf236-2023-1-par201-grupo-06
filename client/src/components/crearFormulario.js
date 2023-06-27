@@ -58,7 +58,7 @@ export default function CrearFormulario() {
    tratamientos_e_indicaciones: "",
    numero_de_folio: "",
    clasificacion: ""});
-   navigate("/");
+   navigate("/nuevoFormulario");
  }
  
  // This following section will display the form that takes the input from the user.
@@ -88,7 +88,7 @@ export default function CrearFormulario() {
        </div>
 
        <div className="form-group">
-         <label htmlFor="horario_de_atencion">Horario de atencion</label>
+         <label htmlFor="horario_de_atencion">Horario de atención</label>
          <input
            type="text"
            className="form-control"
@@ -98,7 +98,7 @@ export default function CrearFormulario() {
          />
        </div>
        <div className="form-group">
-         <label htmlFor="fecha">Fecha de nacimiento</label>
+         <label htmlFor="fecha">Fecha de atención</label>
          <input
            type="text"
            className="form-control"

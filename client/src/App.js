@@ -10,14 +10,14 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 import CrearFormulario from "./components/crearFormulario";
 import Visualizar from "./components/visualizar";
-// import Nose from "./components/nose";
- 
+import Login from "./components/login";
+
 const App = () => {
  return (
    <div>
      <Navbar />
      <Routes>
-       <Route exact path="/" element={<RecordList />} />
+       <Route path="/" element={<Login />} />
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
        <Route path="/nuevoFormulario" element={<CrearFormulario/>} />

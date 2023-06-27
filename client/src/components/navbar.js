@@ -1,16 +1,20 @@
 import React from "react";
- 
+import { useLocation } from "react-router-dom";
 // We import bootstrap to make our application look better.
 import "bootstrap/dist/css/bootstrap.css";
  
 // We import NavLink to utilize the react router.
 import { NavLink } from "react-router-dom";
- 
-import Buscar from './buscar';
+
+import Visualizar from "./visualizar";
+import Formulario from "./formulario";
+
+
 
 // Here, we display our Navbar
 export default function Navbar() {
-
+  const location = useLocation();
+  const showNavbar = location.pathname !== "/";
 
   function buscarPaciente(rut) {
     //e.preventDefault();
@@ -23,6 +27,7 @@ export default function Navbar() {
   
   return (
    <div>
+    {showNavbar &&(
      <nav className="navbar navbar-expand-lg navbar-light bg-light">
        <NavLink className="navbar-brand" to="/">
        <img style={{"width" : 15 + '%'}} src="https://www.buin.cl/wp-content/uploads/2020/05/Mesa-de-trabajo-2-copia-3@3x.png"></img>
@@ -46,28 +51,17 @@ export default function Navbar() {
               Ingresar nuevo paciente
              </NavLink>
            </li>
-           <li className="nav-item">
-           <NavLink className="nav-link" to="/create">
-              Create record
-              </NavLink>
-           </li>
-           <li className="nav-item">
-            
-             <NavLink className="nav-link" to="/visualizar">
-              Buscar paciente
-             </NavLink>
            
-           </li>
          </ul>
-         <form class="form-inline my-2 my-lg-0" onSubmit="{Visualizar}">
-            <ul className="navbar-nav ml-auto">
-              <input class="form-control mr-sm-2" type="text" name="q" placeholder="RUT paciente"/>
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </ul> 
-          </form>
-     <Buscar />
+         
+          <ul>
+            <Formulario></Formulario>
+          </ul>
+          
+     
        </div>
      </nav>
+    )}
    </div>
  );
 }
